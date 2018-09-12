@@ -1,6 +1,6 @@
 language: java
 
-script: ./gradlew clean build war
+script: ./gradlew clean build
 
 deploy:
   provider: heroku
