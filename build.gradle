@@ -32,4 +32,4 @@ dependencies {
     compile 'org.eclipse.jetty:jetty-webapp:9.4.12.v20180830'
 }
 
-task stage(dependsOn: ['clean', 'installApp'])
+task stage(dependsOn: ['clean'])
