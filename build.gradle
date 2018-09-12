@@ -1,0 +1,33 @@
+task wrapper(type: Wrapper) {
+    gradleVersion = "4.10"
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
+
+group 'SBN'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    archiveName = project.name + ".jar"
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'org.eclipse.jetty:jetty-webapp:9.4.12.v20180830'
+}
