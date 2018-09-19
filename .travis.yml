@@ -5,7 +5,7 @@ script: ./gradlew clean build
 deploy:
   provider: heroku
   api_key: c89864a7-f8d0-4276-9cfa-1e479b9d791f
-  app: floating-reaches-63542
+  app: rsoi-lab-1-v2
 
 notifications:
   email: false
